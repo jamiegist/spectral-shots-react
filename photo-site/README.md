@@ -1,0 +1,3 @@
+# Spectral Shots Photography Website
+
+The goal is to create a portfolio website for a photography business using React and Tailwind as the stack. Later to be deployed with Vite. This is another iteration of a similar site built with vanilla JavaScript and CSS. React and Tailwind were selected for more practice, but also to create a more fluid and appealing site and user experience. It should also handle the images better, both for the layout, and for the loading times. This approach should also make the site more responsive and mobile-friendly.
