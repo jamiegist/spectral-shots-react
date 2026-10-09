@@ -1,24 +1,22 @@
-// src/routes/__root.tsx
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
 export const Route = createRootRoute({
   component: () => (
-    <div className="min-h-screen bg-gray-50">
-      
-      <nav className="flex gap-6 p-4 bg-white shadow-sm">
-        <Link to="/" className="text-gray-700 font-mono hover:text-gray-600 [&.active]:font-bold [&.active]:text-black-600">
-          Home
+    <div className="min-h-screen bg-neutral-950 text-white">
+      <nav className="flex justify-between items-center px-8 py-5 bg-black border-b border-neutral-800">
+        <Link to="/" className="font-mono text-white font-bold tracking-wider hover:text-neutral-300 transition-colors">
+          spectral shots
         </Link>
-        <Link to="/about" className="text-gray-700 font-mono hover:text-gray-600 [&.active]:font-bold [&.active]:text-black-600">
-          About
-        </Link>
-        <Link to="/portfolio" className="text-gray-700 font-mono hover:text-gray-600 [&.active]:font-bold [&.active]:text-black-600">
-          Portfolio
-        </Link>
-        <Link to="/contact" className="text-gray-700 font-mono hover:text-gray-600 [&.active]:font-bold [&.active]:text-black-600">
-          Contact
-        </Link>
+
+        <div className="flex space-x-8">
+          <Link to="/portfolio" className="text-neutral-400 font-mono hover:text-white [&.active]:font-bold [&.active]:text-white">
+            portfolio
+          </Link>
+          <Link to="/contact" className="text-neutral-400 font-mono hover:text-white [&.active]:font-bold [&.active]:text-white">
+            contact
+          </Link>
+        </div>
       </nav>
 
       <main className="p-6">
